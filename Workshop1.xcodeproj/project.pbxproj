@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CB98922E1B9906A200D5334F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98922D1B9906A200D5334F /* AppDelegate.swift */; };
-		CB9892301B9906A200D5334F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98922F1B9906A200D5334F /* ViewController.swift */; };
+		CB9892301B9906A200D5334F /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98922F1B9906A200D5334F /* AddViewController.swift */; };
 		CB9892331B9906A200D5334F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9892311B9906A200D5334F /* Main.storyboard */; };
 		CB9892351B9906A200D5334F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9892341B9906A200D5334F /* Images.xcassets */; };
 		CB9892381B9906A200D5334F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB9892361B9906A200D5334F /* LaunchScreen.xib */; };
 		CB9892441B9906A300D5334F /* Workshop1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9892431B9906A300D5334F /* Workshop1Tests.swift */; };
+		CB98924E1B99233A00D5334F /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB98924D1B99233A00D5334F /* ListViewCell.swift */; };
+		CBBF312B1B993CEC006EA38C /* Workshop1Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBF312A1B993CEC006EA38C /* Workshop1Item.swift */; };
+		CBBF312F1B99E092006EA38C /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBF312E1B99E092006EA38C /* ItemManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		CB9892281B9906A200D5334F /* Workshop1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workshop1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB98922C1B9906A200D5334F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB98922D1B9906A200D5334F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB98922F1B9906A200D5334F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB98922F1B9906A200D5334F /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		CB9892321B9906A200D5334F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB9892341B9906A200D5334F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB9892371B9906A200D5334F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CB98923D1B9906A300D5334F /* Workshop1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Workshop1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9892421B9906A300D5334F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB9892431B9906A300D5334F /* Workshop1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workshop1Tests.swift; sourceTree = "<group>"; };
+		CB98924D1B99233A00D5334F /* ListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		CBBF312A1B993CEC006EA38C /* Workshop1Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workshop1Item.swift; sourceTree = "<group>"; };
+		CBBF312E1B99E092006EA38C /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				CB98922D1B9906A200D5334F /* AppDelegate.swift */,
-				CB98922F1B9906A200D5334F /* ViewController.swift */,
+				CB98922F1B9906A200D5334F /* AddViewController.swift */,
+				CBBF312E1B99E092006EA38C /* ItemManager.swift */,
 				CB9892311B9906A200D5334F /* Main.storyboard */,
+				CBBF312A1B993CEC006EA38C /* Workshop1Item.swift */,
+				CB98924D1B99233A00D5334F /* ListViewCell.swift */,
 				CB9892341B9906A200D5334F /* Images.xcassets */,
 				CB9892361B9906A200D5334F /* LaunchScreen.xib */,
 				CB98922B1B9906A200D5334F /* Supporting Files */,
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9892301B9906A200D5334F /* ViewController.swift in Sources */,
+				CB9892301B9906A200D5334F /* AddViewController.swift in Sources */,
+				CBBF312F1B99E092006EA38C /* ItemManager.swift in Sources */,
+				CB98924E1B99233A00D5334F /* ListViewCell.swift in Sources */,
 				CB98922E1B9906A200D5334F /* AppDelegate.swift in Sources */,
+				CBBF312B1B993CEC006EA38C /* Workshop1Item.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +423,7 @@
 				CB9892491B9906A300D5334F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB98924A1B9906A300D5334F /* Build configuration list for PBXNativeTarget "Workshop1Tests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				CB98924C1B9906A300D5334F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
